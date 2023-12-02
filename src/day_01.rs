@@ -5,7 +5,7 @@ use std::{
 
 pub(crate) fn run() {
     let mut sum: u16 = 0;
-    for line in BufReader::new(File::open("inputs/day1_input.txt").unwrap())
+    for line in BufReader::new(File::open("inputs/day_01_input.txt").unwrap())
         .lines()
         .map(|result| result.unwrap())
     {
@@ -29,7 +29,7 @@ pub(crate) fn run() {
 
     // Part 2
     sum = 0;
-    for line in BufReader::new(File::open("inputs/day1_input.txt").unwrap())
+    for line in BufReader::new(File::open("inputs/day_01_input.txt").unwrap())
         .lines()
         .map(|result| result.unwrap())
     {
