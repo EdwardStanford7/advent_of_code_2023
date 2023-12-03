@@ -4,7 +4,7 @@ use std::{
 };
 
 pub(crate) fn run() {
-    let mut sum: u16 = 0;
+    let mut result: u16 = 0;
     for line in BufReader::new(File::open("inputs/day_01_input.txt").unwrap())
         .lines()
         .map(|result| result.unwrap())
@@ -22,13 +22,13 @@ pub(crate) fn run() {
             }
         }
 
-        sum += (first_digit + &second_digit).parse::<u16>().unwrap();
+        result += (first_digit + &second_digit).parse::<u16>().unwrap();
     }
 
-    println!("Part 1: {}", sum);
+    println!("Part 1: {}", result);
 
     // Part 2
-    sum = 0;
+    result = 0;
     for line in BufReader::new(File::open("inputs/day_01_input.txt").unwrap())
         .lines()
         .map(|result| result.unwrap())
@@ -114,8 +114,8 @@ pub(crate) fn run() {
             }
         }
 
-        sum += (first_digit + &second_digit).parse::<u16>().unwrap();
+        result += (first_digit + &second_digit).parse::<u16>().unwrap();
     }
 
-    println!("Part 2: {}", sum);
+    println!("Part 2: {}", result);
 }
