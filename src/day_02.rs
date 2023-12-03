@@ -1,4 +1,3 @@
-use core::num;
 use std::{
     fs::File,
     io::{BufRead, BufReader},
