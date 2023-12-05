@@ -34,8 +34,8 @@ fn main() {
     println!("\nDay 3:");
     day_03::run();
 
-    // println!("\nDay 4:");
-    // day_04::run();
+    println!("\nDay 4:");
+    day_04::run();
 
     // println!("\nDay 5:");
     // day_05::run();
