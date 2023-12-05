@@ -59,9 +59,9 @@ pub(crate) fn run() {
             }
         }
 
-        for i in 0..num_copies[index] {
-            for j in 1..=num_winning {
-                num_copies[index + j] += 1;
+        for _ in 0..num_copies[index] {
+            for i in 1..=num_winning {
+                num_copies[index + i] += 1;
             }
         }
     }
